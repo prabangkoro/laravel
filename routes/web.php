@@ -10,27 +10,32 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
-    return view('welcome');
+    $links = App\Link::all();
+
+    return view('welcome', ['links' => $links]);
 });
 
-Route::get('/home', function () {
-    return 'hello world!';
+Route::get('/submit', function(){
+    return view('submit');
 });
 
-Route::get('/user/{_id}', function ($_id) {
-    return 'hello, '.$_id;
-});
+Route::post('/submit', function(Request $request){
+    $data = $request->validate([
+        'title' => 'required|max:255',
+        'url' => 'required|url|max:255',
+        'desc' => 'required|max:255',
+    ]);
 
-Route::get('/content/{_ctn}/index/{_idx}', function ($_ctn, $_idx) {
-    return 'content: '.$_ctn.' and index: '.$_idx;
-});
+    $link = tap(new App\Link($data))->save();
 
-Route::get('/username/{_username?}', function ($_username = 'default') {
-    return 'username: '.$_username;
+    return redirect('/home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard', 'DashboardController@index');
