@@ -12,16 +12,25 @@
 */
 use Illuminate\Http\Request;
 
+/**
+ *  Home page
+ */
 Route::get('/', function () {
     $links = App\Link::all();
 
     return view('welcome', ['links' => $links]);
 });
 
+/**
+ *  Submit page
+ */
 Route::get('/submit', function(){
     return view('submit');
 });
 
+/**
+ *  Submit page POST
+ */
 Route::post('/submit', function(Request $request){
     $data = $request->validate([
         'title' => 'required|max:255',
@@ -34,8 +43,24 @@ Route::post('/submit', function(Request $request){
     return redirect('/home');
 });
 
+/**
+ *  Auth app routes
+ */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+/**
+ *  Home page
+ */
+//Route::get('/home', 'HomeController@index')->name('home');
 
+/**
+ *  Dashboard Page
+ */
 Route::get('/dashboard', 'DashboardController@index');
+
+/**
+ *  Dashboard Login Page
+ */
+Route::get('/dashboardlogin', function(){
+    return view('dashboardlogin');
+});
