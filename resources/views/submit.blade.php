@@ -34,6 +34,8 @@
                 @endif
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+            <a href="{{ Config::get('constants.URLDashboard') }}" class="btn btn-default">Cancel</a>
         </form>
     </div>
 </div>

@@ -64,3 +64,10 @@ Route::get('/dashboard', 'DashboardController@index');
 Route::get('/dashboardlogin', function(){
     return view('dashboardlogin');
 });
+
+/**
+ *  Article Dashboard Page
+ */
+Route::get("/article", function(){
+    return view('dashboard.dashboard');
+});
