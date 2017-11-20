@@ -13,15 +13,6 @@
 use Illuminate\Http\Request;
 
 /**
- *  Home page
- */
-// Route::get('/', function () {
-//     $links = App\Link::all();
-//
-//     return view('welcome', ['links' => $links]);
-// });
-
-/**
  *  Submit page
  */
 Route::get('/submit', function(){
