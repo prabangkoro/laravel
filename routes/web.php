@@ -77,18 +77,10 @@ Route::get("/article", function(){
  *  Container Page
  */
 
-Route::get('/', function(){
-     return view('pages.home');
- });
+Route::get('/', 'PagesController@home');
 
-Route::get('/container', function(){
-    return view('layouts.container');
-});
+Route::get('/services', 'PagesController@services');
 
-Route::get('/services', function(){
-    return view('pages.services');
-});
+Route::get('/about', 'PagesController@about');
 
-Route::get('/about', function(){
-    return view('pages.about');
-});
+Route::resource('posts', 'PostsController');
