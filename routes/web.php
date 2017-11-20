@@ -15,11 +15,11 @@ use Illuminate\Http\Request;
 /**
  *  Home page
  */
-Route::get('/', function () {
-    $links = App\Link::all();
-
-    return view('welcome', ['links' => $links]);
-});
+// Route::get('/', function () {
+//     $links = App\Link::all();
+//
+//     return view('welcome', ['links' => $links]);
+// });
 
 /**
  *  Submit page
@@ -70,4 +70,25 @@ Route::get('/dashboardlogin', function(){
  */
 Route::get("/article", function(){
     return view('dashboard.dashboard');
+});
+
+// Training
+/**
+ *  Container Page
+ */
+
+Route::get('/', function(){
+     return view('pages.home');
+ });
+
+Route::get('/container', function(){
+    return view('layouts.container');
+});
+
+Route::get('/services', function(){
+    return view('pages.services');
+});
+
+Route::get('/about', function(){
+    return view('pages.about');
 });
