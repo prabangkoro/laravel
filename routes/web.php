@@ -40,11 +40,6 @@ Route::post('/submit', function(Request $request){
 Auth::routes();
 
 /**
- *  Home page
- */
-//Route::get('/home', 'HomeController@index')->name('home');
-
-/**
  *  Dashboard Page
  */
 Route::get('/dashboard', 'DashboardController@index');
