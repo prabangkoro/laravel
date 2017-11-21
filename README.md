@@ -13,7 +13,8 @@
 ## Overview
 This project consist of a simple website with several basic features. The main idea is creating a website from scratch using Laravel framework.
 The development process includes simple branching that explains as below:
-* Master : production-ready
+* master : production-ready
+* staging : staging level, review stage
 * dev/[issue] : development-process
 
 ## Features
