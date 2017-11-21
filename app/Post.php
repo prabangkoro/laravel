@@ -4,11 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Link extends Model
+class Post extends Model
 {
     protected $fillable = [
         'title',
-        'url',
-        'desc',
+        'body',
     ];
 }

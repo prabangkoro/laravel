@@ -13,10 +13,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    
+
                     <div class="links">
                         <ul>
-                            <a href="/submit">Submit a link</a>
+                            <li><a href="{{ Config::get('constants.URLLink') }}">Submit a link</a></li>
+                            <li><a href="{{ Config::get('constants.URLArticle') }}">Article</a></li>
+                            <li><a href="{{ Config::get('constants.URLGallery') }}">Gallery</a></li>
+                            <li><a href="{{ Config::get('constants.URLQuote') }}">Quote</a></li>
+                            <li><a href="{{ Config::get('constants.URLAbout') }}">About</a></li>
                         </ul>
                     </div>
                 </div>
