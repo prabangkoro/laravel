@@ -13,9 +13,18 @@
 ## Overview
 This project consist of a simple website with several basic features. The main idea is creating a website from scratch using Laravel framework.
 The development process includes simple branching that explains as below:
-* Master: production-ready
-* dev/[issue]: development-process
+* Master : production-ready
+* dev/[issue] : development-process
+
+## Features
+This project includes a basic website functionality such as:
+* Simple routing
+* Responsive layout
+* [Incoming] CRUD Command on post
+* [Incoming] Authentication
+* [Incoming] Blog
 
 ## Contact Me
 If you need any information for this project please kindly contact me on:
-* email: bagusprabangkoro[at]gmail[dot]com
+* [E-Mail](mailto:bagusprabangkoro@gmail.com)
+* [LinkedIn](www.linkedin.com/in/bagusprabangkoro)
