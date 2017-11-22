@@ -3,9 +3,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/">{{ config('app.name', 'BabangCreator') }}</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavbarMenu" aria-controls="NavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="glyphicon glyphicon-th-list"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse" id="NavbarMenu">

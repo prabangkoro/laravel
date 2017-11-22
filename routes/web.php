@@ -62,11 +62,13 @@ Route::get("/article", function(){
 /**
  *  Container Page
  */
-
+// http://localhost/
 Route::get('/', 'PagesController@home');
-
+// http://localhost/services
 Route::get('/services', 'PagesController@services');
-
+// http://localhost/about
 Route::get('/about', 'PagesController@about');
-
+// http://localhost/posts
+// http://localhost/posts/{post}
+// http://localhost/posts/{post}/edit
 Route::resource('posts', 'PostsController');

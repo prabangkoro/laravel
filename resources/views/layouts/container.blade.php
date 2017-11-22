@@ -10,6 +10,7 @@
     <body>
         @include('inc.navbar')
         <div class="container">
+            @include('inc.message')
             @yield('content')
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
