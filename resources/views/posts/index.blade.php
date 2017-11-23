@@ -8,7 +8,7 @@
             <div class="well">
                 <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
                 <small>Created at {{$post->created_at}}</small>
-                <p>{{$post->body}}</p>
+                <p>{!! $post->body !!}</p>
             </div>
         @endforeach
         {{$posts->links()}}

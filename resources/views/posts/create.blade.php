@@ -9,8 +9,12 @@
         </div>
         <div class="form-group">
             {!! Form::label('body', 'Blog Post') !!}
-            {!! Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Body Text']) !!}
+            {!! Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Body Text', 'id' => 'txtEditor']) !!}
         </div>
         {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
     {!! Form::close() !!}
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'txtEditor' );
+    </script>
 @endsection
