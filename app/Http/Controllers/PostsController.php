@@ -91,7 +91,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();
-        return view('posts.show')->with('post', $post);
+        return redirect('/posts/'.$id)->with('success', 'Post Updated');
     }
 
     /**
