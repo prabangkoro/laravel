@@ -2,7 +2,9 @@
 
 @section('content')
     <h1>Posts</h1>
-    <a href="/posts/create" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> New Post</a>
+    <p>
+    <a href="/posts/create" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span> New Post</a>
+    </p>
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="well">
