@@ -9,7 +9,7 @@
                 </div>
                 <div class="panel-body">
                     <a href="/posts/create" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span> Create Post</a>
-                    <h2>Post</h2>
+                    <h2>Post(s)</h2>
                 </div>
             </div>
         </div>
