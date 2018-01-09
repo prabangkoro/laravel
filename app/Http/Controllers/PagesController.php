@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class PagesController extends Controller
 {
@@ -19,6 +20,8 @@ class PagesController extends Controller
     }
 
     public function dashboard(){
-        return view('pages.dashboard');
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        return view('pages.dashboard')->with('posts', $user->posts);
     }
 }
