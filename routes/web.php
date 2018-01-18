@@ -10,27 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
-    return 'hello world!';
-});
-
-Route::get('/user/{_id}', function ($_id) {
-    return 'hello, '.$_id;
-});
-
-Route::get('/content/{_ctn}/index/{_idx}', function ($_ctn, $_idx) {
-    return 'content: '.$_ctn.' and index: '.$_idx;
-});
-
-Route::get('/username/{_username?}', function ($_username = 'default') {
-    return 'username: '.$_username;
-});
+/**
+ *  Container Page
+ */
+// http://localhost/
+Route::get('/', 'PagesController@home');
+// http://localhost/services
+Route::get('/services', 'PagesController@services');
+// http://localhost/about
+Route::get('/about', 'PagesController@about');
+// http://localhost/posts
+// http://localhost/posts/{post}
+// http://localhost/posts/{post}/edit
+Route::resource('posts', 'PostsController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard', 'PagesController@dashboard');
