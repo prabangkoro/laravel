@@ -1,0 +1,66 @@
+Blog App roadmap:
+* Web Pages
+	* Home (Intro)
+	* Book review landing page
+	* Movie review landing page
+	* Galery landing page
+	* Blog landing page
+	* About
+	
+* Blog
+	* post index (including category, filter)
+	* post detail
+	
+* Book review
+	* post index (including category, filter)
+	* post detail
+
+* Movie review
+	* post index (including category, filter)
+	* post detail
+	
+* Galery
+	* post index (including category, filter)
+	* post detail
+	
+* Auth
+	* Login page
+	
+* Dashboard (CPanel like)
+	* Blog post section
+		* add post
+		* edit post
+		* delete post
+		* draft post
+		* published post
+		* preview post
+
+	* Book review section
+		* add post
+		* edit post
+		* delete post
+		* draft post
+		* published post
+		* preview post
+
+	* Movie review section
+		* add post
+		* edit post
+		* delete post
+		* draft post
+		* published post
+		* preview post
+		
+	* Galery section
+		* add post
+		* edit post
+		* delete post
+		* draft post
+		* published post
+		* manage library
+		* preview post
+		
+* Error Pages
+	* not found
+	* unauthorized
+	* temporary maintenance
