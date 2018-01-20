@@ -31,3 +31,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'PagesController@dashboard');
+
+Route::get('/index', function(){
+    return view('html.index');
+});

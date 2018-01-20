@@ -1,0 +1,15 @@
+doctype
+html(lang='en')
+  head
+    title= 'Hello Pug~'
+    link(href='css/app.css', rel='stylesheet')
+  body
+    p Hello !!!
+    div.nav-bar
+      h1 nav title
+      ul
+        - for (var i = 0; i < 5; i++){
+          li
+            a= 'link ' + i
+        - }
+    script(type='text/javascript', src='js/app.js')
