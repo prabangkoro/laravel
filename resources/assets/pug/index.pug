@@ -2,14 +2,25 @@ doctype
 html(lang='en')
   head
     title= 'Hello Pug~'
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='csrf-token')
     link(href='css/app.css', rel='stylesheet')
   body
-    p Hello !!!
-    div.nav-bar
-      h1 nav title
-      ul
-        - for (var i = 0; i < 5; i++){
-          li
-            a= 'link ' + i
-        - }
-    script(type='text/javascript', src='js/app.js')
+    nav.navbar.navbar-toggleable-md.navbar-inverse
+      div.container-fluid
+        div.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbarNavDropdown')
+            span.glyphicon.glyphicon-menu-hamburger
+          a.navbar-brand(href='#') babangcreator
+        div.collapse.navbar-collapse#navbarNavDropdown
+          ul.nav.navbar-nav
+            - for (var i = 1; i <= 5; i++){
+              li.nav-item
+                a.nav-link(href='#')= 'main-link ' + i
+            - }
+          ul.nav.navbar-nav.navbar-right
+            - for (var i = 1; i <= 3; i++){
+              li.nav-item
+                a.nav-link(href='#')= 'right-link ' + i
+            - }
+    script(src='js/app.js', type='text/javascript')
