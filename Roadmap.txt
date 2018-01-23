@@ -6,6 +6,7 @@ Blog App roadmap:
 	* Galery landing page
 	* Blog landing page
 	* About
+	* Profile
 	
 * Blog
 	* post index (including category, filter)
