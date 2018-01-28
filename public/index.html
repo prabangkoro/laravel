@@ -22,53 +22,55 @@
 <body>
   <!-- header -->
   <header class="header-main">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BabangCreator</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galery.html">Galery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="movies.html">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="books.html">Books</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
-        
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-md-2" type="text" style="width: 200px;" placeholder="Search">
-          <button type="submit" class="btn btn-info">Search!</button>
-        </form>
-        
-        <ul class="navbar-nav navbar-nav-right ml-2">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              User
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Dashboard</a>
-              <a class="dropdown-item" href="#">Media</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Log Out</a>
-            </div>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BabangCreator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-md-2" type="text" style="width: 200px;" placeholder="Search">
+            <button type="submit" class="btn btn-info">Search!</button>
+          </form>
+
+          <ul class="navbar-nav navbar-nav-right ml-2">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                User
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Dashboard</a>
+                <a class="dropdown-item" href="#">Media</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -76,14 +78,16 @@
   <section class="section-intro intro-main">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
+        <img src="/img/profile-picture.jpg" alt="profpic">
         <h1 class="display-4">Intro Space</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
           information.
         </p>
-        <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a href="#" role="button">
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+          </a>
         </p>
       </div>
     </div>
@@ -321,7 +325,8 @@
   <footer class="footer-main">
     <div class="container">
       <div class="col-md-6 mx-auto">
-        <p><i class="fa fa-copyright" aria-hidden="true"></i>copyright 2018 babang</p>
+        <p>
+          <i class="fa fa-copyright" aria-hidden="true"></i>copyright 2018 babang</p>
       </div>
     </div>
   </footer>

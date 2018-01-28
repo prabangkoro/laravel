@@ -1,0 +1,19 @@
+// navigation bar
+.navbar{
+  height: 15vh;
+
+  a, a.navbar-brand{
+    color: #000000;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+  }
+  a:hover, a.navbar-brand:hover, .nav-item.active a{
+    padding-bottom: 4px !important;
+    border-bottom: 2px solid #000 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+.navbar-inner{
+  background: transparent;
+}

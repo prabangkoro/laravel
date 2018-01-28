@@ -17,10 +17,60 @@ h6 {
 
 body {
   font-family: "Alegreya", "Roboto", sans-serif, serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* MODULES - Individual site components */
 
+.section-light img {
+  width: 20%;
+}
+
 /* LAYOUTS - Page layout styles */
+
+.navbar {
+  height: 15vh;
+}
+
+.navbar a,
+.navbar a.navbar-brand {
+  color: #000000;
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar a:hover,
+.navbar a.navbar-brand:hover,
+.navbar .nav-item.active a {
+  padding-bottom: 4px !important;
+  border-bottom: 2px solid #000 !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.navbar-inner {
+  background: transparent;
+}
+
+.jumbotron {
+  background: crimson url("/img/wallpapers.jpg") center no-repeat;
+  width: 100%;
+  color: #fff;
+  padding: 30px 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.jumbotron img {
+  width: 25%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 0 10vh 0;
+}
+
+.jumbotron a {
+  color: #000000;
+  font-size: 50px;
+}
 
