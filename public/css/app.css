@@ -15,67 +15,137 @@ h6 {
   margin-top: 0;
 }
 
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  margin: 0;
+  padding: 0;
+}
+
+.section-quote {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Alegreya", "Roboto", sans-serif, serif;
   font-size: 16px;
+  background: #00c9b6 url("/img/wallpapers.jpg") no-repeat fixed center;
+  width: 100%;
 }
 
 /* MODULES - Individual site components */
+
+button[type='submit'] {
+  border-style: none;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: black;
+}
+
+button[type='submit']:hover {
+  background-color: #FF5722;
+}
 
 .section-light img {
   width: 20%;
 }
 
+input[type='text'] {
+  border-radius: 0;
+  padding: 5px 10px;
+}
+
 /* LAYOUTS - Page layout styles */
 
 .navbar {
-  height: 15vh;
+  height: 10vh;
+  background: #424242;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .navbar a {
-  color: #000000 !important;
-  padding-bottom: 2px !important;
+  color: #ffffff !important;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
 }
 
-.navbar a:hover,
+.navbar .nav-item a {
+  padding-bottom: 6px !important;
+}
+
+.navbar .nav-item a:hover,
 .navbar .nav-item.active a {
   padding-bottom: 4px !important;
-  border-bottom: 2px solid #000 !important;
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
+  border-bottom: 2px solid #ffffff !important;
 }
 
-.navbar .navbar-brand {
-  padding: 6px 8px !important;
-  margin-bottom: 4px;
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
+.navbar a.navbar-brand {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
 }
 
-.navbar-inner {
-  background: transparent;
+.navbar .dropdown a,
+.navbar .dropdown a:hover {
+  padding-bottom: 2px !important;
+  border-bottom: 0px !important;
+}
+
+.navbar .form-inline {
+  margin-bottom: 0px !important;
+}
+
+.navbar .dropdown-menu {
+  background: #8f8e8e;
+  border-radius: 0;
+  margin-top: 2vh;
+}
+
+.navbar .dropdown-menu a {
+  padding: 4px 10px;
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: black;
 }
 
 .jumbotron {
-  background: crimson url("/img/wallpapers.jpg") center no-repeat;
+  background: transparent;
   width: 100%;
-  color: #fff;
-  padding: 30px 20px;
+  height: 100vh;
+  color: black;
+  padding: 15vh 0 0 0;
   margin: 0;
   text-align: center;
 }
 
 .jumbotron img {
-  width: 25%;
+  width: 30vh;
   border-radius: 50%;
   padding: 0;
-  margin: 0 0 10vh 0;
+  margin: 0 0 5vh 0;
 }
 
 .jumbotron a {
-  color: #000000;
+  color: black;
   font-size: 50px;
+}
+
+.section-quote {
+  background-color: #f5f4f4;
+  color: black;
+  padding: 60px 0;
+  text-align: right;
+}
+
+.section-quote p {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-style: italic;
 }
 

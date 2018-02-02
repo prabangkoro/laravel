@@ -1,20 +1,23 @@
 // jumbotron and intro style
 
+//main intro
 .jumbotron{
-  background: crimson url('/img/wallpapers.jpg') center no-repeat;
+  //background: crimson url('/img/wallpapers.jpg') center no-repeat;
+  background: transparent;
   width: 100%;
-  color: #fff;
-  padding: 30px 20px;
+  height: 100vh;
+  color: $gray-color-dark;
+  padding: 15vh 0 0 0;
   margin: 0;
   text-align: center;
   img{
-    width: 25%;
+    width: 30vh;
     border-radius: 50%;
     padding: 0;
-    margin: 0 0 10vh 0;
+    margin: 0 0 5vh 0;
   }
   a{
-    color: #000000;
+    color: $gray-color-dark;
     font-size: 50px;
   }
 }

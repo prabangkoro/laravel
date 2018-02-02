@@ -3,4 +3,6 @@
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
+  background: $primary-color-light url($background-image) no-repeat fixed center;
+  width: 100%;
 }

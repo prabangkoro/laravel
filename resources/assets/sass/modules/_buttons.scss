@@ -1,0 +1,11 @@
+//button stylesheet
+//button submit
+button[type='submit']{
+  border-style: none;
+  border-radius: 0;
+  color: $base-font-color;
+  background-color: $gray-color-dark;
+  &:hover{
+    background-color: $secondary-color;
+  }
+}

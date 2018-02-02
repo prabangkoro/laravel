@@ -1,24 +1,41 @@
 // navigation bar
 .navbar{
-  height: 15vh;
-  
+  height: 10vh;
+  background: $gray-color;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   a{
-    color: #000000 !important;
-    padding-bottom: 2px !important;
+    color: $base-font-color !important;
     box-sizing: border-box !important;
   }
-  a:hover, .nav-item.active a{
+  .nav-item a{
+    padding-bottom: 6px !important;
+  }
+  .nav-item a:hover, .nav-item.active a{
     padding-bottom: 4px !important;
-    border-bottom: 2px solid #000 !important;
-    box-sizing: border-box !important;
+    border-bottom: 2px solid $base-font-color !important;
   }
-  .navbar-brand{
-    padding: 6px 8px !important;
-    margin-bottom: 4px;
-    box-sizing: border-box !important;
+  a.navbar-brand{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 6px;
   }
-}
-
-.navbar-inner{
-  background: transparent;
+  .dropdown a, .dropdown a:hover{
+    padding-bottom: 2px !important;
+    border-bottom: 0px !important;
+  }
+  .form-inline{
+    margin-bottom: 0px !important;
+  }
+  .dropdown-menu{
+    background: $gray-color-light;
+    border-radius: 0;
+    margin-top: 2vh;
+    a{
+      padding: 4px 10px;
+      &:hover{
+        background-color: $gray-color-dark;
+      }
+    }
+  }
 }
