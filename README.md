@@ -1,5 +1,8 @@
 # Laravel Project
 
+## Announcement
+This Project has been transfered to a private repository. If you have any query about unpushed changes, simply contact me. Feel free to ask me anything!
+
 ## How to start
 1. Clone the repository into your local
 2. Open your directory in cmd/terminal
