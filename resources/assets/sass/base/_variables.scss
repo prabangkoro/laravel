@@ -1,27 +1,58 @@
 //font
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato|Playfair+Display|Roboto');
-$base-font-family: 'Alegreya', 'Roboto', sans-serif, serif;
+
+//font family
+// @import url('https://fonts.googleapis.com/css?family=Alegreya|Lato|Playfair+Display|Roboto');
+$base-font-family: sans-serif, serif;
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Alegreya', serif;
 // font-family: 'Lato', sans-serif;
 // font-family: 'Playfair Display', serif;
-$base-font-size: 16px;
-$hero-font-size: 40px;
-$base-font-color: #ffffff;
-$primary-font-color: #000000;
+
+//font size
+$paragraph-font-size: 16px;
+$title-font-size: 40px;
+$intro-font-size: 16px;
+
+//title
+//intro
+//paragraph
+//links
 
 //color
-$primary-color: #009688;
-$primary-color-dark: darken($primary-color, 10%);
-$primary-color-light: lighten($primary-color, 10%);
-$primary-color-light-2: lighten($primary-color, 20%);
-$secondary-color: #FF5722;
-$secondary-color-dark: darken($secondary-color, 10%);
-$secondary-color-light: lighten($secondary-color, 10%);
-$gray-color: #424242;
-$gray-color-dark: darken($gray-color, 30%);
-$gray-color-light: lighten($gray-color, 30%);
-$gray-color-light-2: lighten($gray-color, 70%);
+//primary color
+$primary-color: #01579b;
+$primary-color-dark: #002f6c;
+$primary-color-light: #4f83cc;
+//secondary color
+$secondary-color: #00796b;
+$secondary-color-dark: #004c40;
+$secondary-color-light: #48a999;
+//grays color
+$gray-color: #E4E3DF;
+$gray-color-light: #F6F5F5;
+//font color
+$font-color-light: #ffffff;
+$font-color-dark: #000000;
 
 //image
-$background-image: "/img/wallpapers.jpg";
+$background-image: "/img/wallpaper(2).jpg";
+
+//element dimension
+//navbar
+$navbar-width-max: 992px;
+$navbar-height: 60px;
+
+//content height
+$min-intro-height: 600px;
+
+//shadow dimension
+$shadow-v-offset: 0px;
+$shadow-blur: 15px;
+$shadow-color: rgba(0, 0, 0, 0.8);
+
+//element spacing
+//container padding
+$container-pad: 46px;
+$container-min-pad: 20px;
+$container-v-pad: 70px;
+

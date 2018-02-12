@@ -2,22 +2,31 @@
 
 //main intro
 .jumbotron{
-  //background: crimson url('/img/wallpapers.jpg') center no-repeat;
-  background: transparent;
-  width: 100%;
-  height: 100vh;
-  color: $gray-color-dark;
-  padding: 15vh 0 0 0;
-  margin: 0;
+  //background
+  background-color: rgba(0, 0, 0, 0.5);
+
+  //text
   text-align: center;
-  img{
-    width: 30vh;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0 0 5vh 0;
-  }
-  a{
-    color: $gray-color-dark;
-    font-size: 50px;
-  }
+  color: white;
+
+  //dimension
+  min-height: $min-intro-height;
+  padding-top: $container-v-pad + $navbar-height;
+  //background: crimson url('/img/wallpapers.jpg') center no-repeat;
+  // background: transparent;
+  // height: 100vh;
+  // color: $gray-color-dark;
+  // padding: 15vh 0 0 0;
+  // margin: 0;
+  // text-align: center;
+  // img{
+  //   width: 30vh;
+  //   border-radius: 50%;
+  //   padding: 0;
+  //   margin: 0 0 5vh 0;
+  // }
+  // a{
+  //   color: $gray-color-dark;
+  //   font-size: 50px;
+  // }
 }

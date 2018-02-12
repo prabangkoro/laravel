@@ -1,8 +1,27 @@
 // base styling
 
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  background: $primary-color-light url($background-image) no-repeat fixed center;
+  background: black url($background-image) no-repeat fixed center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  //small media
+  @media screen and (max-width: $navbar-width-max) {
+    .container, .container-fluid{
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: $container-min-pad;
+      padding-right: $container-min-pad;
+    }
+  }
+  //wide media
+  @media screen and (min-width: $navbar-width-max) {
+    width: $navbar-width-max;
+    .container, .container-fluid{
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: $container-pad;
+      padding-right: $container-pad;
+    }
+  }
 }
