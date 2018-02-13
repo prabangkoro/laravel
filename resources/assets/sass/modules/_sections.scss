@@ -1,6 +1,29 @@
 // sections
+
+// section default
+section{
+  background-color: $gray-color;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  @include box-shadow (0, 0, $shadow-blur, $shadow-color, true);
+}
+// section intro
+.section-intro{
+  //background
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  //shadow
+  @include no-shadow;
+  //more button
+  .more i{
+    color: white;
+  }
+}
 // section light
 .section-light{
+  //background
+  background-color: $gray-color-light;
+  //shadow
+  @include no-shadow;
   img{
     width:20%;
   }

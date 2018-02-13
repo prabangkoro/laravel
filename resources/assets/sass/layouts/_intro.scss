@@ -3,12 +3,25 @@
 //main intro
 .jumbotron{
   //background
-  background-color: rgba(0, 0, 0, 0.5);
-
+  background-color: transparent;
   //text
   text-align: center;
   color: white;
-
+  h1{
+    font-size: 4rem;
+    line-height: 3;
+  }
+  p{
+    width: 66%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  p.more{
+    padding-top: 3rem !important;
+  }
   //dimension
   min-height: $min-intro-height;
   padding-top: $container-v-pad + $navbar-height;

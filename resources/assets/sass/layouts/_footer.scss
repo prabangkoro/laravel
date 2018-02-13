@@ -1,0 +1,19 @@
+//footer
+
+// section intro
+footer:not(.blockquote-footer){
+  //background
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  //dimension
+  min-height: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  //shadow
+  @include no-shadow;
+  //text
+  color: white;
+  text-align: center;
+  p{
+    padding-top: 1rem;
+  }
+}

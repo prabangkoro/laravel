@@ -20,3 +20,9 @@
     box-shadow: $hoffset $voffset $blur $color;
   }
 }
+
+@mixin no-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

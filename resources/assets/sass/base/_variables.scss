@@ -9,14 +9,13 @@ $base-font-family: sans-serif, serif;
 // font-family: 'Playfair Display', serif;
 
 //font size
-$paragraph-font-size: 16px;
-$title-font-size: 40px;
-$intro-font-size: 16px;
-
-//title
-//intro
 //paragraph
-//links
+$paragraph-font-size: 16px;
+//title
+$title-font-size: 3rem;
+$title-line-height: 2.5;
+//tagline
+$tagline-font-size: 14px;
 
 //color
 //primary color
@@ -49,6 +48,7 @@ $min-intro-height: 600px;
 $shadow-v-offset: 0px;
 $shadow-blur: 15px;
 $shadow-color: rgba(0, 0, 0, 0.8);
+$section-shadow-v-offset: 5px;
 
 //element spacing
 //container padding
