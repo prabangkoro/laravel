@@ -1,12 +1,5 @@
 // sections
 
-// section default
-section{
-  background-color: $gray-color;
-  padding-top: 4rem;
-  padding-bottom: 1.5rem;
-  @include box-shadow (0, 0, $shadow-blur, $shadow-color, true);
-}
 // section intro
 .section-intro{
   //background
@@ -15,9 +8,46 @@ section{
   @include no-shadow;
   //more button
   .more i{
-    color: white;
+    color: rgba(255,255,255,0.5);
+  }
+  .more:hover i{
+    color: rgba(255,255,255,1);
   }
 }
+
+// section default
+section{
+  //background
+  background-color: $gray-color;
+  //dimension
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  //shadow
+  @include box-shadow (0, 0, $shadow-blur, $shadow-color, true);
+  //elements
+  //title
+  h1{
+    padding-bottom: 3rem;
+    font-family: $primary-font-family;
+    font-size: 3rem;
+    font-weight: lighter;
+    float: left;
+  }
+
+  //load more button
+  .load-more{
+    font-family: $primary-font-family;
+    float: right;
+    color: rgba(0,0,0,.5);
+    font-size: 1.5rem;
+    line-height: 2.5;
+    &:hover{
+      color: rgba(0,0,0,1);
+      text-decoration: none;
+    }
+  }
+}
+
 // section light
 .section-light{
   //background

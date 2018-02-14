@@ -1,4 +1,4 @@
-/*
+@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed);/*
 	Blog_App Sass Theme
 	Author: babangcreator
 	Version: 0.0.1
@@ -42,11 +42,22 @@ p {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: black url("/img/wallpaper(2).jpg") no-repeat fixed center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 992px) {
@@ -74,12 +85,17 @@ body {
 }
 
 body .more i {
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 3rem;
+}
+
+body .more:hover i {
+  color: black;
 }
 
 body p.more {
   padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   margin-left: auto !important;
@@ -87,7 +103,25 @@ body p.more {
   text-align: center;
 }
 
+body .clearfix {
+  clear: both;
+}
+
 /* MODULES - Individual site components */
+
+.section-intro {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-intro .more i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-intro .more:hover i {
+  color: white;
+}
 
 section {
   background-color: #E4E3DF;
@@ -97,14 +131,25 @@ section {
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
-.section-intro {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+section h1 {
+  padding-bottom: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  float: left;
 }
 
-.section-intro .more i {
-  color: white;
+section .load-more {
+  font-family: "Roboto Condensed", sans-serif;
+  float: right;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  line-height: 2.5;
+}
+
+section .load-more:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .section-light {
@@ -159,6 +204,7 @@ input[type='text'] {
   background-color: #01579b;
   -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 @media screen and (min-width: 992px) {
@@ -215,20 +261,22 @@ input[type='text'] {
   margin-right: auto;
 }
 
-.jumbotron {
+.intro-main .jumbotron {
   background-color: transparent;
   text-align: center;
   color: white;
   min-height: 600px;
-  padding-top: 130px;
+  padding-top: 105px;
 }
 
-.jumbotron h1 {
+.intro-main .jumbotron h1 {
+  float: none;
   font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 3;
 }
 
-.jumbotron p {
+.intro-main .jumbotron p {
   width: 66%;
   margin-right: auto;
   margin-left: auto;
@@ -237,7 +285,7 @@ input[type='text'] {
   line-height: 1.5;
 }
 
-.jumbotron p.more {
+.intro-main .jumbotron p.more {
   padding-top: 3rem !important;
 }
 
@@ -254,5 +302,65 @@ footer:not(.blockquote-footer) {
 
 footer:not(.blockquote-footer) p {
   padding-top: 1rem;
+}
+
+.gallery-card {
+  width: 300px;
+  height: 225px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-card h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.gallery-card:nth-child(even) {
+  background-color: #00796b !important;
+}
+
+.gallery-card:nth-child(odd) {
+  background-color: #004c40 !important;
+}
+
+.gallery-card.hero {
+  width: 600px;
+  height: 450px;
+  background-color: #01579b !important;
+}
+
+.section-quote {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.section-quote p {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+  font-size: 3.4rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.section-quote .blockquote-footer {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.8rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  padding-bottom: 2rem;
 }
 

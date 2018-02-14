@@ -1,0 +1,43 @@
+// gallery styling
+
+.gallery-card{
+  //dimension
+  width: 300px;
+  height: 225px;
+  border: none;
+  box-sizing: border-box;
+
+  //put on left
+  float: left;
+
+  //image
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  //font
+  color: white;
+  h2{
+    font-family: $primary-font-family;
+  }
+
+  //background
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:nth-child(even){
+    background-color: $secondary-color !important;
+  }
+  &:nth-child(odd){
+    background-color: $secondary-color-dark !important;
+  }
+
+  //hero
+  &.hero{
+    width: 600px;
+    height: 450px;
+    //background
+    background-color: $primary-color !important;
+  }
+}
