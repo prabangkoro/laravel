@@ -8,7 +8,6 @@
   &:-ms-input-placeholder      {@content};
 }
 
-
 @mixin box-shadow($hoffset, $voffset, $blur, $color, $inset: false) {
   @if $inset {
     -webkit-box-shadow:inset $hoffset $voffset $blur $color;
@@ -25,4 +24,20 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content{
+    position: absolute;
+    //top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }

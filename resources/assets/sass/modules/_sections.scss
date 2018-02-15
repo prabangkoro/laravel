@@ -24,6 +24,7 @@ section{
   padding-bottom: 1.5rem;
   //shadow
   @include box-shadow (0, 0, $shadow-blur, $shadow-color, true);
+  
   //elements
   //title
   h1{
