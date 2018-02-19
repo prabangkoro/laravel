@@ -19,21 +19,10 @@
 section{
   //background
   background-color: $gray-color;
-  //dimension
-  padding-top: 4rem;
-  padding-bottom: 1.5rem;
   //shadow
   @include box-shadow (0, 0, $shadow-blur, $shadow-color, true);
   
   //elements
-  //title
-  h1{
-    padding-bottom: 3rem;
-    font-family: $primary-font-family;
-    font-size: 3rem;
-    font-weight: lighter;
-    float: left;
-  }
 
   //load more button
   .load-more{
@@ -45,6 +34,35 @@ section{
     &:hover{
       color: rgba(0,0,0,1);
       text-decoration: none;
+    }
+  }
+
+  //small viewport
+  //title
+  h1{
+    padding-bottom: 1.8rem;
+    font-family: $primary-font-family;
+    font-size: 2rem;
+    font-weight: lighter;
+    float: left;
+  }
+  //dimension
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  //medium viewport
+  @media (min-width: $screen-sm-min){
+    //title
+    h1{
+      padding-bottom: 2rem;
+      font-size: 2.4rem;
+    }
+  }
+  //large viewport
+  @media (min-width: $screen-md-min){
+    //title
+    h1{
+      padding-bottom: 3rem;
+      font-size: 3rem;
     }
   }
 }

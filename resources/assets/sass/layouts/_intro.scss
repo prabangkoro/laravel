@@ -4,27 +4,46 @@
 .intro-main .jumbotron{
   //background
   background-color: transparent;
+  //small viewport
   //text
   text-align: center;
   color: white;
   h1{
     float: none;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-family: $primary-font-family;
-    line-height: 3;
+    line-height: 2;
   }
   p{
-    width: 66%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
   p.more{
     padding-top: 3rem !important;
   }
   //dimension
-  min-height: $min-intro-height;
-  padding-top: $container-v-pad + 35px;
+  padding-top: $container-v-pad - 10px;
+  //medium viewport
+  @media (min-width: $screen-sm-min){
+    h1{
+      font-size: 4rem;
+      line-height: 3;
+    }
+    p{
+      width: 66%;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+    //dimension
+    min-height: $min-intro-height;
+  }
+  //large viewport
+  @media (min-width: $screen-md-min) {
+    //dimension
+    padding-top: $container-v-pad + 35px;
+  }
 }

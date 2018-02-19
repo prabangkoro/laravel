@@ -1,25 +1,51 @@
 //quote styling
 
 .section-quote{
+  //small viewport
+  //dimension
   padding-right: 1rem;
   padding-left: 1rem;
+  //quote text
   p{
     font-family: $primary-font-family;
     text-align: right;
-    font-size: 3.4rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 0, 0.8);
     line-height: 1.4;
-
     padding-top: 2.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
   }
+  //footer
   .blockquote-footer{
     font-family: $primary-font-family;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: right;
     color: rgba(0,0,0,0.6);
     font-style: italic;
-
     padding-bottom: 2rem;
+  }
+  //medium viewport
+  @media (min-width: $screen-sm-min){
+    //dimension
+    //quote text
+    p{
+      font-size: 2.4rem;
+    }
+    //footer
+    .blockquote-footer{
+      font-size: 1.5rem;
+    }
+  }
+  //large viewport
+  @media (min-width: $screen-md-min){
+    //dimension
+    //quote text
+    p{
+      font-size: 3rem;
+    }
+    //footer
+    .blockquote-footer{
+      font-size: 1.6rem;
+    }
   }
 }

@@ -8,25 +8,29 @@ body {
 
   //font
   font-family: $secondary-font-family;
-  //small media
-  @media screen and (max-width: $navbar-width-max) {
+
+  //small viewport
+  .container, .container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: $container-min-pad !important;
+    padding-right: $container-min-pad !important; 
+  }
+  //medium viewport
+  @media (min-width: $screen-sm-min){
+
+  }
+  //large viewport
+  @media (min-width: $screen-md-min) {
+    width: $screen-md-min;
     .container, .container-fluid{
       margin-left: 0;
       margin-right: 0;
-      padding-left: $container-min-pad;
-      padding-right: $container-min-pad;
+      padding-left: $container-pad !important;
+      padding-right: $container-pad !important; 
     }
   }
-  //wide media
-  @media screen and (min-width: $navbar-width-max) {
-    width: $navbar-width-max;
-    .container, .container-fluid{
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: $container-pad;
-      padding-right: $container-pad;
-    }
-  }
+  
   //more button
   .more i{
     color: rgba(0,0,0,0.5);

@@ -42,10 +42,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  &:nth-child(even){
+  &:nth-child(3){
     background-color: $secondary-color !important;
   }
-  &:nth-child(odd){
+  &:nth-child(5){
     background-color: $secondary-color-dark !important;
   }
 
@@ -63,5 +63,31 @@
     }
     //background
     background-color: $primary-color !important;
+  }
+}
+
+.content-group{
+  //small viewport
+  .inner-caption{
+    display: none;
+    //medium viewport
+    @media (min-width: $screen-sm-min){
+      display: inline-block;
+    }
+    //large viewport
+    @media (min-width: $screen-md-min) {
+      display: inline-block;
+    }
+  }
+  .outer-caption{
+    display: inline-block;
+    //medium viewport
+    @media (min-width: $screen-sm-min){
+      display: none;
+    }
+    //large viewport
+    @media (min-width: $screen-md-min) {
+      display: none;
+    } 
   }
 }
